@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- ESTO ES UN COMENTARIO -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNDERTALE — Un mundo bajo tierra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<section class="hero">
+  <div class="eyebrow">UN RPG DE ROL DONDE NADIE TIENE QUE MORIR</div>
+  <h1 class="title">UNDERTALE</h1>
+  <p class="subtitle">Un niño cae bajo tierra. Allí abajo, monstruos, acertijos y decisiones esperan. Tú eliges cómo se cuenta la historia.</p>
+
+  <!-- el alma se puede mover con el mouse o con las flechas dentro de la caja -->
+  <div class="soul-wrap" id="soulWrap">
+    <div class="soul" id="soul"></div>
+    <span class="hp-label" id="hpLabel">LV 1 &nbsp; HP 20/20</span>
+  </div>
+
+  <!-- cuadro de diálogo con efecto de tipeo -->
+  <div class="dialogue">
+    <p id="dialogueText"></p><span class="cursor" id="cursor">▌</span>
+  </div>
+
+  <!-- menú de combate interactivo -->
+  <div class="battle-menu" id="battleMenu">
+    <button class="menu-btn" data-action="fight">FIGHT</button>
+    <button class="menu-btn" data-action="act">ACT</button>
+    <button class="menu-btn" data-action="item">ITEM</button>
+    <button class="menu-btn" data-action="mercy">MERCY</button>
+  </div>
+
+  <button class="cta" id="ctaBtn">DESCENDER AL UNDERGROUND</button>
+</section>
+
+<section class="info">
+  <article class="card">
+    <span class="mark">★</span>
+    <h3>COMBATE SIN VIOLENCIA</h3>
+    <p>Cada encuentro puede resolverse hablando, esquivando o perdonando. Nada te obliga a pelear.</p>
+  </article>
+  <article class="card">
+    <span class="mark">★</span>
+    <h3>UN MUNDO QUE RECUERDA</h3>
+    <p>Tus decisiones no se olvidan. Personajes y finales cambian según cómo trataste a quienes conociste.</p>
+  </article>
+  <article class="card">
+    <span class="mark">★</span>
+    <h3>MÚSICA QUE CUENTA HISTORIAS</h3>
+    <p>Cada zona tiene su propio tema, y algunos vuelven a aparecer cuando menos lo esperas.</p>
+  </article>
+</section>
+
+<section class="characters">
+  <h2 class="section-title">QUIÉNES TE ESPERAN AHÍ ABAJO</h2>
+  <div class="char-grid">
+    <article class="char-card" style="--c: #ffe066;">
+      <h3>Toriel</h3>
+      <p>La primera en encontrarte. Cuida las Ruinas y a quien se pierda en ellas. Hornea pays de caramelo mejor que nadie.</p>
+    </article>
+    <article class="char-card" style="--c: #7dff7d;">
+      <h3>Sans</h3>
+      <p>Un esqueleto que prefiere los atajos, los chistes malos y no esforzarse demasiado. Vigila más de lo que aparenta.</p>
+    </article>
+    <article class="char-card" style="--c: #4dd0ff;">
+      <h3>Papyrus</h3>
+      <p>Hermano de Sans. Quiere unirse a la Guardia Real, ordena espagueti a domicilio y confía en todos, incluso en vos.</p>
+    </article>
+    <article class="char-card" style="--c: #ff8a3d;">
+      <h3>Undyne</h3>
+      <p>Líder de la Guardia Real. Entrena sin descanso y no piensa dejar pasar a un humano sin pelear primero.</p>
+    </article>
+    <article class="char-card" style="--c: #ff9ad1;">
+      <h3>Alphys</h3>
+      <p>Científica real, fan del anime y responsable de más de un secreto incómodo del Underground.</p>
+    </article>
+    <article class="char-card" style="--c: var(--soul-red);">
+      <h3>Flowey</h3>
+      <p>La primera flor que vas a conocer. Sonríe mucho. Sabe más del mundo de lo que debería.</p>
+    </article>
+  </div>
+</section>
+
+<section class="routes">
+  <h2 class="section-title">TRES FORMAS DE JUGAR LA MISMA HISTORIA</h2>
+  <div class="route-tabs" role="tablist">
+    <button class="route-tab active" data-route="pacifista">PACIFISTA</button>
+    <button class="route-tab" data-route="neutral">NEUTRAL</button>
+    <button class="route-tab" data-route="genocida">GENOCIDA</button>
+  </div>
+  <div class="route-content">
+    <p id="routeText">No lastimás a nadie. Hablás, escuchás y perdonás hasta el final. Es la ruta pensada para conocer a cada personaje sin perder a ninguno.</p>
+  </div>
+</section>
+
+<section class="trivia">
+  <h2 class="section-title">DATOS CURIOSOS</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-header">¿Quién hizo Undertale?</button>
+      <div class="accordion-body">
+        <p>Todo el juego —código, música, guion y gran parte del arte— fue obra de una sola persona: Toby Fox.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">¿El combate es obligatorio?</button>
+      <div class="accordion-body">
+        <p>No. El sistema de combate permite esquivar ataques y elegir opciones como hablar, revisar o perdonar en lugar de atacar.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">¿El juego recuerda mis decisiones?</button>
+      <div class="accordion-body">
+        <p>Sí. Algunos personajes reaccionan distinto según cómo los trataste antes, incluso después de reiniciar una partida.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">¿Hay más de un final?</button>
+      <div class="accordion-body">
+        <p>Sí, hay varios finales posibles según la ruta que elijas: desde uno completamente pacífico hasta otros mucho más oscuros.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Página de fans, no oficial · Undertale es obra de <span>Toby Fox</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
