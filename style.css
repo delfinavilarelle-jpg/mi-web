@@ -1,3 +1,4 @@
+/* ===== VARIABLES DE COLOR ===== */
 :root {
   --rojo-gryffindor: #740001;
   --dorado: #D3A625;
@@ -11,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'EB Garamond', serif;
   background-color: var(--crema);
@@ -231,4 +233,50 @@ button:hover {
   text-align: center;
   padding: 20px;
   font-family: 'Cinzel', serif;
+}
+
+/* ===== ESCUDO ===== */
+.escudo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+}
+
+/* ===== EL CLASICO ===== */
+.texto-clasico {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.duelo-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.duelo-item {
+  background-color: white;
+  border: 3px solid var(--rojo-gryffindor);
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.duelo-imagen {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 2px solid var(--dorado);
+}
+
+.duelo-item h3 {
+  color: var(--rojo-gryffindor);
+  margin-bottom: 8px;
 }
